@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <style>
+        ul li {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header position-sticky" style="top:0">
+        <div class="container">
+            <div class="row">
+                <div class="col pb-lg-3 px-0">
+                    <nav class="navbar navbar-expand-md pb-0">
+                        <a href="index.html" class="navbar-brand desktop">
+                            <img src="media/logo.png" class="img-fluid desktop" />
+                            <!-- <img src="media/logom.svg" class="img-fluid mobile" /> -->
+                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#myNav">
+                                <span class="navbar-toggler-icon toggle"></span>
+                            </button>
+                            <a href="#" class="mobile border-0">
+                                <!-- <img src="media/logo.png" class="img-fluid desktop" /> -->
+                                <img src="media/user.svg" class="img-fluid mobile border-0" />
+                            </a>
+                        </div>
+                        <a href="#" class="navbar-brand mobile border-0">
+                            <!-- <img src="media/logo.png" class="img-fluid desktop" /> -->
+                            <img src="media/logom.svg" class="img-fluid mobile border-0" />
+                        </a>
+                        <div class="collapse navbar-collapse justify-content-end" id="myNav">
+                            <ul class="navbar-nav py-4 py-lg-0">
+                                <li class="nav-item order-2 order-lg-1">
+                                    <a class="nav-link fs14" href="store.html">STORE</a>
+                                </li>
+                                <li class="nav-item order-1 order-lg-1">
+                                    <a class="nav-link fs14" href="expert.html">OUR ADVICE</a>
+                                </li>
+                                <li class="nav-item order-0 order-lg-1">
+                                    <a class="nav-link fs14 " href="about.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item order-3 order-lg-1">
+                                    <a class="nav-link fs14" href="contact.html">CONTACT US</a>
+                                </li>
+                                <li class="nav-item order-3 order-lg-1 d-block d-lg-none">
+                                    <a class="nav-link fs14" href="cart.html">CART</a>
+                                </li>
+                                <li class="nav-item dropdown px-0 order-4 order-lg-1">
+                                    <a class="nav-link fs14  dropdown-toggle" data-bs-toggle="dropdown" href="#">GBP £
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <div class="gbp">
+                                            <a class="dropdown-item" href="#">GBP £</a>
+                                            <a class="dropdown-item active" href="#">GBP £</a>
+                                            <a class="dropdown-item" href="#">GBP £</a>
+                                        </div>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item order-5 order-lg-1 d-none d-lg-block">
+                                    <a class="nav-link fs14 " href="#"><svg width="18" height="18" viewBox="0 0 18 18"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.7721 14.3157C11.0082 14.3157 11.2346 14.2229 11.4016 14.0576C11.5685 13.8924 11.6623 13.6683 11.6623 13.4346V11.6724C11.6623 11.4387 11.5685 11.2146 11.4016 11.0493C11.2346 10.8841 11.0082 10.7912 10.7721 10.7912C10.5361 10.7912 10.3096 10.8841 10.1427 11.0493C9.97577 11.2146 9.88198 11.4387 9.88198 11.6724V13.4346C9.88198 13.6683 9.97577 13.8924 10.1427 14.0576C10.3096 14.2229 10.5361 14.3157 10.7721 14.3157ZM7.21151 14.3157C7.4476 14.3157 7.67401 14.2229 7.84095 14.0576C8.00788 13.8924 8.10167 13.6683 8.10167 13.4346V11.6724C8.10167 11.4387 8.00788 11.2146 7.84095 11.0493C7.67401 10.8841 7.4476 10.7912 7.21151 10.7912C6.97543 10.7912 6.74901 10.8841 6.58208 11.0493C6.41514 11.2146 6.32135 11.4387 6.32135 11.6724V13.4346C6.32135 13.6683 6.41514 13.8924 6.58208 14.0576C6.74901 14.2229 6.97543 14.3157 7.21151 14.3157ZM15.2229 3.74238H13.9945L12.4545 0.702548C12.4075 0.590695 12.3376 0.489649 12.2493 0.405727C12.161 0.321805 12.0562 0.25681 11.9414 0.214804C11.8266 0.172797 11.7042 0.154681 11.582 0.16159C11.4598 0.168498 11.3404 0.200281 11.2311 0.254953C11.1219 0.309624 11.0252 0.38601 10.9471 0.479335C10.8691 0.572661 10.8113 0.680921 10.7774 0.79735C10.7435 0.91378 10.7343 1.03588 10.7502 1.15601C10.7661 1.27614 10.8069 1.39173 10.8701 1.49555L12.0006 3.74238H5.98309L7.11359 1.49555C7.2 1.29017 7.20471 1.06003 7.12679 0.851356C7.04886 0.642678 6.89407 0.470902 6.6935 0.370516C6.49292 0.270131 6.2614 0.248567 6.04542 0.310154C5.82944 0.371742 5.645 0.511921 5.52911 0.702548L3.98914 3.74238H2.76072C2.13155 3.75185 1.52597 3.98093 1.05078 4.38923C0.575586 4.79752 0.261318 5.35879 0.163397 5.97406C0.0654771 6.58932 0.190196 7.21904 0.515557 7.75217C0.840918 8.2853 1.34602 8.68757 1.94178 8.88805L2.6005 15.4611C2.66692 16.1154 2.97734 16.7217 3.47113 17.1616C3.96493 17.6015 4.60664 17.8434 5.27097 17.8401H12.7305C13.3948 17.8434 14.0365 17.6015 14.5303 17.1616C15.0241 16.7217 15.3345 16.1154 15.401 15.4611L16.0597 8.88805C16.6567 8.68698 17.1626 8.28323 17.4878 7.74832C17.8129 7.21341 17.9363 6.58187 17.8361 5.96554C17.7358 5.34921 17.4185 4.78789 16.9402 4.38098C16.4619 3.97407 15.8536 3.74785 15.2229 3.74238ZM13.6117 15.2849C13.5896 15.503 13.4861 15.7051 13.3215 15.8517C13.1569 15.9984 12.943 16.079 12.7216 16.0779H5.26207C5.04063 16.079 4.82672 15.9984 4.66212 15.8517C4.49752 15.7051 4.39405 15.503 4.37191 15.2849L3.7399 9.02903H14.2438L13.6117 15.2849ZM15.2229 7.26681H2.76072C2.52464 7.26681 2.29823 7.17398 2.13129 7.00874C1.96435 6.8435 1.87057 6.61939 1.87057 6.3857C1.87057 6.15202 1.96435 5.92791 2.13129 5.76266C2.29823 5.59742 2.52464 5.50459 2.76072 5.50459H15.2229C15.459 5.50459 15.6854 5.59742 15.8524 5.76266C16.0193 5.92791 16.1131 6.15202 16.1131 6.3857C16.1131 6.61939 16.0193 6.8435 15.8524 7.00874C15.6854 7.17398 15.459 7.26681 15.2229 7.26681Z"
+                                                fill="#1C65BA" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item order-6 order-lg-1 d-none d-lg-block">
+                                    <a class="nav-link fs14 " data-bs-toggle="dropdown" href="#"><svg width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM12 6C13.0609 6 14.0783 6.42143 14.8284 7.17157C15.5786 7.92172 16 8.93913 16 10V12C16 13.0609 15.5786 14.0783 14.8284 14.8284C14.0783 15.5786 13.0609 16 12 16C10.9391 16 9.92172 15.5786 9.17157 14.8284C8.42143 14.0783 8 13.0609 8 12V10C8 8.93913 8.42143 7.92172 9.17157 7.17157C9.92172 6.42143 10.9391 6 12 6ZM12 8C11.4696 8 10.9609 8.21071 10.5858 8.58579C10.2107 8.96086 10 9.46957 10 10V12C10 12.5304 10.2107 13.0391 10.5858 13.4142C10.9609 13.7893 11.4696 14 12 14C12.5304 14 13.0391 13.7893 13.4142 13.4142C13.7893 13.0391 14 12.5304 14 12V10C14 9.46957 13.7893 8.96086 13.4142 8.58579C13.0391 8.21071 12.5304 8 12 8ZM7.91 18.876C7.33398 18.5329 6.80319 18.119 6.33 17.644C6.92398 16.946 7.68102 16.4053 8.534 16.07C8.65695 16.0175 8.78916 15.9903 8.92283 15.9898C9.0565 15.9893 9.18891 16.0156 9.31223 16.0672C9.43555 16.1188 9.54728 16.1945 9.64082 16.29C9.73436 16.3855 9.8078 16.4988 9.85681 16.6231C9.90582 16.7475 9.9294 16.8804 9.92615 17.014C9.92291 17.1477 9.89291 17.2793 9.83792 17.4011C9.78293 17.523 9.70408 17.6325 9.60602 17.7234C9.50796 17.8142 9.39268 17.8845 9.267 17.93C8.735 18.14 8.274 18.468 7.909 18.876H7.91ZM16.054 18.898C15.6668 18.4697 15.1836 18.1394 14.644 17.934C14.5175 17.8901 14.4012 17.8213 14.3018 17.7316C14.2024 17.6419 14.1221 17.5332 14.0655 17.4119C14.009 17.2905 13.9773 17.1591 13.9725 17.0253C13.9677 16.8916 13.9897 16.7582 14.0374 16.6331C14.0851 16.508 14.1574 16.3938 14.25 16.2972C14.3427 16.2006 14.4538 16.1235 14.5767 16.0706C14.6997 16.0177 14.832 15.9901 14.9659 15.9893C15.0998 15.9885 15.2324 16.0146 15.356 16.066C16.2398 16.4021 17.0251 16.9547 17.64 17.673C17.1645 18.1459 16.6317 18.5575 16.054 18.898Z"
+                                                fill="#1C65BA" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgmhome">
+        <div class="bg1 bgn position-relative pt-lg-5 mart0" style="margin-top:-120px">
+            <div class="py-lg-5 overflow-hidden">
+                <div class="pt-lg-5"></div>
+                <div class="row py-lg-5 align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 learning">
+                        <img src="media/hom1.png" class="img-fluid desktop">
+                        <img src="media/home1m.png" class="img-fluid mobile">
+                    </div>
+                    <div class="col-lg-4 px-lg-5 col-md-7 col-sm-12 mt-4  px-lg-0 mt-lg-0">
+                        <div class="col-lg-12 text-center col-md-10 col-10 mx-auto">
+                            <div class="fsb-64 text-capitalize lh-1 pb-3">You're in the <br class="d-block d-lg-none">
+                                right hands!
+                            </div>
+                            <p class="fs-16 p-0">Discover our extensive range of coding materials, offering resources
+                                for programming languages and technologies at all levels, from novice to advanced. Find
+                                everything you need to achieve your coding goals.
+                            </p>
+                            <div class="d-flex gap-lg-3 gap-4 justify-content-center flex-wrap flex-lg-nowrap">
+                                <button type="button" class="btn1 w100m">
+                                    find out more
+                                </button>
+                                <button type="button" class="btn2 w100m">
+                                    Our advice
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper overflow-hidden pt-5" style="top:0">
+            <section class="">
+                <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+                    <div class="bg2 bgn">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-3 col-md-3 col-sm-12 pb-4">
+                                    <img src="media/rec1.png" class="img-fluid w-100">
+                                    <div class="flex pt-2 mt-4" style="background-color: #F4F4F4;">
+                                        <div class="col text-center">
+                                            <div class="fsb-22 pb-2">Secure and Easy<br> Payments</div>
+                                            <p class="fs-16 fw300">100% secure payments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 pb-4">
+                                    <img src="media/rec2.png" class="img-fluid w-100">
+                                    <div class="flex  pt-2 mt-4" style="background-color: #F4F4F4;">
+                                        <div class="col text-center">
+                                            <div class="fsb-22 pb-2">Dev’s Advice,<br> Just A Click Away</div>
+                                            <p class="fs-16 fw300">Online consulting service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 pb-4">
+                                    <img src="media/rec3.png" class="img-fluid w-100">
+                                    <div class="flex pt-2 mt-4" style="background-color: #F4F4F4;">
+                                        <div class="col text-center">
+                                            <div class="fsb-22 pb-2">All Courses,<br> Available Online</div>
+                                            <p class="fs-16 fw300">Start your online course today</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 pb-4">
+                                    <img src="media/rec4.png" class="img-fluid w-100">
+                                    <div class="flex pt-2 mt-4" style="background-color: #F4F4F4;">
+                                        <div class="col text-center">
+                                            <div class="fsb-22 pb-2">Satisfaction<br> Guaranteed</div>
+                                            <p class="fs-16 fw300">100% quality products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg3 mt-lg-4 pt-lg-4">
+                        <div class="container py-5 px-0">
+                            <div class="row justify-content-between gap-lg-0 gap-5">
+                                <div class="col-lg-5  text-center">
+                                    <img src="media/home2.png" alt="" class="img-fluid mb-5 desktop">
+                                    <img src="media/home2m.png" alt="" class="img-fluid mb-5 mobile">
+                                    <h3 class="fsb-48 mt-5">Dev’s advice for you!</h3>
+                                    <p class="fs-16 my-lg-3 px-4 px-lg-0">Lorem ipsum dolor sit amet consectetur.
+                                        Convallis non id aenean tortor consectetur tempus augue. Integer orci id proin
+                                        in venenatis consectetur ultricies enim. Blandit vulputate pellentesque duis
+                                        nibh. In ultrices feugiat
+                                        nunc nisl at lacus. In auctor fringilla mattis morbi. Dolor odio cursus habitant
+                                        amet id </p>
+                                    <button class="btn1 w90m">find out more</button>
+                                </div>
+                                <div class="col-lg-5  text-center">
+                                    <img src="media/home3.png" alt="" class="img-fluid mb-5 desktop">
+                                    <img src="media/home3m.png" alt="" class="img-fluid mb-lg-5 mt-lg-0 my-4 mobile">
+                                    <h3 class="fsb-48 mt-5">why learn with us</h3>
+                                    <p class="fs-16 my-lg-3 px-4 px-lg-0">Lorem ipsum dolor sit amet consectetur.
+                                        Convallis non id aenean tortor consectetur tempus augue. Integer orci id proin
+                                        in venenatis consectetur ultricies enim. Blandit vulputate pellentesque duis
+                                        nibh. In ultrices feugiat
+                                        nunc nisl at lacus. In auctor fringilla mattis morbi. Dolor odio cursus habitant
+                                        amet id </p>
+                                    <button class="btn1 w90m">find out more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgn"
+                        style="background-image: url(media/Group\ 8250.png); background-position-x: center;">
+
+                        <div class="container pt-5 w_max1440">
+                            <div class="row">
+                                <div
+                                    class="col-lg-12 align-items-center gap-3 justify-content-center col-md-9 col-11 mx-auto d-flex flex-lg-nowrap flex-wrap">
+                                    <div class="fsb-48 text-center text-capitalize">Explore our <br
+                                            class="d-lg-none d-block"> best Sellers
+                                    </div>
+                                    <button type="button" class="btn1 w100m" style="background-color: #3BBEF6">View
+                                        All</button>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-11 mx-auto pt-3">
+
+                                </div>
+                            </div>
+                            <div class="owl-carousel mt-4 owl-theme">
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-12 pt-3 pb-2 pcard px-4">
+                                        <img src="media/produc.png" class="img-fluid pb-3 w-100">
+                                        <div class="fsb-16 pb-2" style="color: #3BBEF6">E-BOOK</div>
+                                        <div class="fsb-22 pb-2">The Complete Web<br> Developer Course 2.0</div>
+                                        <button type="button" class="fsb-16 bg-dark w-100 py-2 mb-3"
+                                            style="color: #3BBEF6">Find Out More</button>
+                                        <div class="row justify-content-between">
+                                            <div class="col-6 fsb-36">£350.00</div>
+                                            <div class="col-5 text-end">
+                                                <button type="button"
+                                                    class="btn1 w-100 d-flex justify-content-center py-2"
+                                                    style="background-color: #3BBEF6"><img src="media/cart.png" class=""
+                                                        style="width: 23px; height: 22px;"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bna"
+                        style="background-image: url(media/get\ started.png); background-position-x: center;">
+                        <div class="container  py-lg-5 pt-5 pb-3 px-0">
+                            <div class="col-lg-10 mx-auto text-center">
+                                <img src="media/home4.png" alt="" class="img-fluid desktop">
+                                <img src="media/home4M.png" alt="" class="img-fluid mobile">
+                                <h3 class="fsb-48 text-capitalize my-4 px-4">innovative web development made <br
+                                        class="d-block d-lg-none"> for you
+                                </h3>
+                                <p class="fs-16 my-lg-3 col-lg-9 px-4  mx-auto">Lorem ipsum dolor sit amet consectetur.
+                                    Ipsum sed turpis aliquam bibendum diam dignissim faucibus nullam congue. Hac
+                                    facilisis id leo quam. Cras aliquet netus gravida consectetur sit. Adipiscing eget
+                                    augue faucibus lacus.
+                                    Pretium id fringilla pretium tempor a.</p>
+                                <div class="col-lg-4 mx-auto col-11">
+                                    <button class="btn1 w-100">Contact us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="px-4 px-lg-0 py-lg-0 py-5">
+        <div class="row  align-items-center justify-content-center">
+            <div
+                class="col-xxl-5 col-xl-6 col-lg-6 col-12 footer_link_box d-flex justify-content-lg-center gap-lg-1 gap-4 justify-content-between flex-lg-nowrap flex-wrap px-lg-0 px-3">
+                <div class="col-lg-4 col-12 footer_links ">
+                    <h2 class="fs16 fw-bold text-uppercase my-lg-0 mt-3 mb-2">useful links</h2>
+                    <div class="d-flex flex-column gap-2 gap-2 mt-lg-3 mt-4 flex-lg-nowrap flex-wrap ">
+                        <a href="store.html" class="text-decoration-none fs16">Shop</a>
+                        <a href="expert.html" class="text-decoration-none fs16">Expert advice</a>
+                        <a href="about.html" class="text-decoration-none fs16">About us</a>
+                        <a href="contact.html" class="text-decoration-none fs16">Contact</a>
+                        <a href="terms.html" class="text-decoration-none fs16">Terms & Conditions</a>
+                        <a href="privacy.html" class="text-decoration-none fs16">Privacy policy</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 pe-4 col-12 footer_links">
+                    <h2 class="fs16 fw-bold text-uppercase my-lg-0 mt-3 mb-2">contact us</h2>
+                    <h2 class="fs16 fw-bold text-uppercase mt-lg-3 mt-3 mb-2">Support Email</h2>
+                    <div class="d-flex flex-column gap-2 gap-lg-3 mt-lg-0 mt-0 flex-lg-nowrap flex-wrap ">
+                        <a href="mailto:supportcodernerdz.com"
+                            class="text-decoration-none fs16 col-12">Support@devolutions4u.com</a>
+
+                    </div>
+                    <h2 class="fs16 fw-bold text-uppercase mt-lg-4 mt-3 mb-2">phone</h2>
+                    <div class="d-flex flex-column gap-2 gap-lg-3 mt-lg-0 mt-0 flex-lg-nowrap flex-wrap">
+                        <a href="mailto:supportcodernerdz.com" class="text-decoration-none fs16 col-12">+44 (0) 20 123
+                            4567</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 footer_links">
+                    <h2 class="fs16 fw-bold text-uppercase my-lg-0 mt-3 mb-2">Support</h2>
+                    <div class="d-flex flex-lg-column  gap-2 gap-2 mt-4 mt-lg-3 flex-lg-nowrap flex-wrap ">
+                        <p class="fs16 text-start">
+                            Coder Access Now<br> 123 Street Name<br> City, <br> Country
+                            <br> Post Code
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 justify-content-center footer_l pt-lg-5 pt-4 pb-4  d-flex  position-relative"
+                style="left: -0px;">
+                <div class="col-xxl-5 col-xl-6 col-lg-8 col-12 d-block d-flex  align-items-lg-baseline flex-column">
+                    <div class="col-lg-4 col-4">
+                        <img src="media/footer_	logo.png" alt="">
+
+                        <img src="media/mastercard.png" alt="" class="my-4">
+
+                    </div>
+                    <p class="col-lg-12  fs-16 text-start">
+                        © 2023 Devolutions4u.com<br> All rights reserved.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            stagePadding: 10,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 15,
+                    center: true,
+                    stagePadding: 10,
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
